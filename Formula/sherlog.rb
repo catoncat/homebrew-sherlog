@@ -1,3 +1,7 @@
+# This file is a release template, not a tap formula by itself.
+# The release workflow replaces every __...__ token with the version and
+# SHA-256 digests computed from that release's native archives. It uploads the
+# rendered sherlog.rb as a verifiable release asset; it does not mutate a tap.
 class Sherlog < Formula
   desc "Progressive local search for agent session logs"
   homepage "https://github.com/catoncat/sherlog"
