@@ -5,16 +5,16 @@
 class Sherlog < Formula
   desc "Progressive local search for agent session logs"
   homepage "https://github.com/catoncat/sherlog"
-  version "0.5.2"
+  version "0.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/catoncat/sherlog/releases/download/v0.5.2/sherlog-v0.5.2-aarch64-apple-darwin.tar.gz"
-      sha256 "418f53a9864d9c5421de9ba191518c174b1dd983a3c10648febecfcc97716eab"
+      url "https://github.com/catoncat/sherlog/releases/download/v0.5.3/sherlog-v0.5.3-aarch64-apple-darwin.tar.gz"
+      sha256 "8c79918efc509ce1667e19113e69a62fe067e9612e0e244538b90b9f801402eb"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catoncat/sherlog/releases/download/v0.5.2/sherlog-v0.5.2-x86_64-apple-darwin.tar.gz"
-      sha256 "9b4a279a6a640756a24e61d0654b56cc86be83a5c45590731b2493221826ea5a"
+      url "https://github.com/catoncat/sherlog/releases/download/v0.5.3/sherlog-v0.5.3-x86_64-apple-darwin.tar.gz"
+      sha256 "1372a930134198efdfd1346bcaf85e0bffd9c458e04578c325b81f56cea3e096"
     else
       odie "Sherlog does not publish a native archive for this macOS architecture"
     end
@@ -22,8 +22,8 @@ class Sherlog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catoncat/sherlog/releases/download/v0.5.2/sherlog-v0.5.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "520390934d7f1fd5b3082dc129cb012d55e26679c9fdbf1ae7e7a274f0a1403a"
+      url "https://github.com/catoncat/sherlog/releases/download/v0.5.3/sherlog-v0.5.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d9fc51edf67d6e74d3e37b09369e2d8b57e285b0d7c55d6869d0c882c5e723e6"
     else
       odie "Sherlog does not publish a native archive for this Linux architecture"
     end
